@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/tabpages/about/scroll.dart';
+import 'package:portfolio/tabpages/dragable_scroll_card.dart';
 
 class CustomDeailsPage extends StatefulWidget {
   const CustomDeailsPage(
@@ -33,34 +33,47 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 204, 203, 201),
       body: SafeArea(
         child: Stack(
           clipBehavior: Clip.none,
           children: [
-            Positioned(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 25),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 30),
-                    child: SizedBox(
-                      child: Text(
-                        widget.maintitle,
-                        style: const TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
+            Card(
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30))),
+              child: Container(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 25),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 30),
+                      child: SizedBox(
+                        child: Text(
+                          widget.maintitle,
+                          style: const TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 15),
-                  Center(
-                    child: SizedBox(
-                      height: MediaQuery.of(context).size.width * 0.6,
-                      width: MediaQuery.of(context).size.width * 0.6,
-                      child: _roudContainer(imeUrl: widget.imgUrl),
+                    const SizedBox(height: 15),
+                    Center(
+                      child: SizedBox(
+                        height: MediaQuery.of(context).size.width * 0.6,
+                        width: MediaQuery.of(context).size.width * 0.6,
+                        child: _roudContainer(imeUrl: widget.imgUrl),
+                      ),
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 25),
+                  ],
+                ),
               ),
             ),
             const SizedBox(height: 25),
@@ -85,13 +98,12 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20)),
           ),
-          // color: Colors.blue[100],
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: ListView.builder(
               controller: scrollController,
               itemCount: 1,
-              itemBuilder: (BuildContext context, int index) {
+              itemBuilder: (context, index) {
                 return _scrollContent();
               },
             ),
@@ -101,85 +113,75 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
     );
   }
 
-  GestureDetector _scrollContent() {
-    return GestureDetector(
-      onTap: (() {}),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            widget.maintitle,
-            style: const TextStyle(
-                color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 25),
-          Text(
-            widget.discription,
-            style: const TextStyle(color: Colors.white),
-            maxLines: 4,
-          ),
-          const SizedBox(height: 20),
-          _bottomTitles(),
-          const SizedBox(height: 20),
-          SizedBox(height: 50, child: _bottumImages()),
-          const SizedBox(height: 20),
-          const Text(
-            'Recent Projects',
-            style: TextStyle(
-                color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 20),
-          SizedBox(
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: ListView(
-                children: [
-                  myScrollCard(),
-                  //myScrollCard(),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(height: 20),
-        ],
-      ),
-    );
-  }
-
-  Card myScrollCard() => Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0),
+  Column _scrollContent() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          widget.maintitle,
+          style: const TextStyle(
+              color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        child: SizedBox(
-          height: 280,
-          width: 210,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+        const SizedBox(height: 25),
+        Text(
+          widget.discription,
+          style: const TextStyle(color: Colors.white),
+          maxLines: 4,
+        ),
+        const SizedBox(height: 20),
+        _bottomTitles(),
+        const SizedBox(height: 20),
+        SizedBox(height: 50, child: _bottumImages()),
+        const SizedBox(height: 20),
+        const Text(
+          'Recent Projects',
+          style: TextStyle(
+              color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 20),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
             children: [
-              Text('mytext'),
-              Text('mytext'),
-              Text('mytext'),
+              myScrollCard(),
+              myScrollCard(),
+              myScrollCard(),
             ],
           ),
         ),
-      );
+        const SizedBox(height: 20),
+      ],
+    );
+  }
+
+  DragableScrollCard myScrollCard() => const DragableScrollCard();
 
   Row _bottomTitles() {
     return Row(
       children: [
-        Text(
-          widget.bottomtitleleft,
-          style: const TextStyle(
-              color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(width: 20),
-        Text(
-          widget.bottomtitleright,
-          style: const TextStyle(
-              color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
-        )
+        _bottomTitelsCustom(title: widget.bottomtitleleft),
+        const SizedBox(width: 10),
+        _bottomTitelsCustom(title: widget.bottomtitleright),
       ],
+    );
+  }
+
+  Container _bottomTitelsCustom({required String title}) {
+    return Container(
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+          title,
+          style: const TextStyle(
+            color: Colors.black,
+          ),
+        ),
+      ),
     );
   }
 
@@ -224,28 +226,19 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
     );
   }
 
-  GestureDetector _roudContainer({
+  Container _roudContainer({
     required String imeUrl,
   }) {
-    return GestureDetector(
-        onTap: () {},
-        child: Container(
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(30)),
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(30),
-            child: Image(
-              image: NetworkImage(imeUrl),
-            ),
-          ),
-        ));
-  }
-
-  niew() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const ScrollPage()),
+    return Container(
+      decoration: const BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(30)),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(30),
+        child: Image(
+          image: NetworkImage(imeUrl),
+        ),
+      ),
     );
   }
 }
