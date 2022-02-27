@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/const/about/counstome_page.dart';
+import 'package:portfolio/tabpages/coustom_page.dart';
 
 class StudyTabPage extends StatelessWidget {
   const StudyTabPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const CustomPage(
+    return CustomPage(
       imgUrl:
           'https://www.clipartmax.com/png/full/153-1534898_%C2%A0-wolf-head-logo.png',
       maintitle: 'Study',
@@ -20,6 +20,9 @@ class StudyTabPage extends StatelessWidget {
           'https://seeklogo.com/images/I/instagram-logo-041EABACE1-seeklogo.com.png',
       buttomimagethree:
           'https://seeklogo.com/images/I/instagram-logo-041EABACE1-seeklogo.com.png',
+      onClick: _onClickCallback,
     );
   }
+
+  _onClickCallback() {}
 }

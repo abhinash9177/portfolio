@@ -10,7 +10,8 @@ class CustomPage extends StatefulWidget {
       required this.bottomtitleright,
       required this.buttomimageone,
       required this.buttomimagetwo,
-      required this.buttomimagethree})
+      required this.buttomimagethree,
+      required this.onClick})
       : super(key: key);
 
   final String imgUrl;
@@ -21,6 +22,7 @@ class CustomPage extends StatefulWidget {
   final String buttomimageone;
   final String buttomimagetwo;
   final String buttomimagethree;
+  final VoidCallback onClick;
 
   @override
   State<CustomPage> createState() => _CustomPageState();
@@ -71,7 +73,7 @@ class _CustomPageState extends State<CustomPage> {
                       left: 250,
                       bottom: -20,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: widget.onClick,
                         child: const Icon(Icons.arrow_forward),
                         style: ElevatedButton.styleFrom(
                           primary: Colors.black,
