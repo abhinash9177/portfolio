@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class UnderlogoRowCard extends StatelessWidget {
-  const UnderlogoRowCard({
-    Key? key,
-  }) : super(key: key);
+class UnderlogoRowCard extends StatefulWidget {
+  const UnderlogoRowCard({Key? key, required this.name}) : super(key: key);
+  final String name;
+  @override
+  State<UnderlogoRowCard> createState() => _UnderlogoRowCardState();
+}
 
+class _UnderlogoRowCardState extends State<UnderlogoRowCard> {
+  IconData icon = const IconData(0xea00, fontFamily: 'MaterialIcons');
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -14,15 +18,12 @@ class UnderlogoRowCard extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.border_bottom,
-              size: 45,
-            ),
+            Icon(icon),
             const SizedBox(width: 5),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
-                children: const [Text('data'), Text('subdata')],
+                children: [Text(widget.name), Text(widget.name)],
               ),
             )
           ],

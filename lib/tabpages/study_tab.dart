@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/checking/json_build.dart';
+import 'package:portfolio/checking/passengerfile.dart';
 import 'package:portfolio/tabpages/coustom_page.dart';
 
-class StudyTabPage extends StatelessWidget {
+class StudyTabPage extends StatefulWidget {
   const StudyTabPage({Key? key}) : super(key: key);
 
+  @override
+  State<StudyTabPage> createState() => _StudyTabPageState();
+}
+
+class _StudyTabPageState extends State<StudyTabPage> {
   @override
   Widget build(BuildContext context) {
     return CustomPage(
@@ -24,5 +31,10 @@ class StudyTabPage extends StatelessWidget {
     );
   }
 
-  _onClickCallback() {}
+  _onClickCallback() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const CustomBuild()),
+    );
+  }
 }

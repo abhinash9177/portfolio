@@ -30,6 +30,8 @@ class _DragableScrollCardState extends State<DragableScrollCard> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(width: 80, child: Image.network(widget.cardimageurl)),
+            const SizedBox(height: 20),
             Text(widget.title),
             Text(widget.time),
             Text(widget.aboutit),

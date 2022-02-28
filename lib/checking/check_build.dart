@@ -1,41 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/checking/mymodel.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/bottum_stack_image.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/main_image.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/under_logo_row_card.dart';
 import 'package:portfolio/tabpages/dragable_scroll_card.dart';
 import 'package:portfolio/tabpages/hero_widget.dart';
 
-class CustomDeailsPage extends StatefulWidget {
-  const CustomDeailsPage(
-      {Key? key,
-      required this.imgUrl,
-      required this.maintitle,
-      required this.discription,
-      required this.bottomtitleleft,
-      required this.bottomtitleright,
-      required this.buttomimageone,
-      required this.buttomimagetwo,
-      required this.buttomimagethree,
-      required this.onClick})
-      : super(key: key);
+class JsonBuildPage extends StatefulWidget {
+  const JsonBuildPage({
+    Key? key,
+    required this.data,
+  }) : super(key: key);
 
-  final String imgUrl;
-  final String maintitle;
-  final String discription;
-  final String bottomtitleleft;
-  final String bottomtitleright;
-  final String buttomimageone;
-  final String buttomimagetwo;
-  final String buttomimagethree;
-  final VoidCallback onClick;
+  final Data? data;
 
   @override
-  State<CustomDeailsPage> createState() => _CustomDeailsPageState();
+  State<JsonBuildPage> createState() => _JsonBuildPageState();
 }
 
-class _CustomDeailsPageState extends State<CustomDeailsPage> {
+class _JsonBuildPageState extends State<JsonBuildPage> {
   @override
   Widget build(BuildContext context) {
+    final Data? mydata = widget.data;
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 204, 203, 201),
       body: SafeArea(
@@ -55,7 +41,7 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
                     padding: const EdgeInsets.only(left: 30),
                     child: SizedBox(
                       child: Text(
-                        widget.maintitle,
+                        mydata!.title!,
                         style: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
@@ -66,15 +52,15 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
                     child: SizedBox(
                       height: MediaQuery.of(context).size.width * 0.4,
                       width: MediaQuery.of(context).size.width * 0.4,
-                      child: _roudContainer(imeUrl: widget.imgUrl),
+                      child: _roudContainer(imeUrl: mydata.mainImage!),
                     ),
                   ),
                   const SizedBox(height: 20),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 30.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30.0),
                     child: Text(
-                      'Work Progress',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      mydata.underLogoTitle!,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
                   const SizedBox(height: 5),
@@ -101,21 +87,18 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
   Row underLogoRow() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
+      children: [
         UnderlogoRowCard(
-          name: '',
+          name: widget.data!.underLogoRow[0]!.name,
         ),
         UnderlogoRowCard(
-          name: '',
+          name: widget.data!.underLogoRow[1]!.name,
         ),
         UnderlogoRowCard(
-          name: '',
+          name: widget.data!.underLogoRow[2]!.name,
         ),
         UnderlogoRowCard(
-          name: '',
-        ),
-        UnderlogoRowCard(
-          name: '',
+          name: widget.data!.underLogoRow[3]!.name,
         ),
       ],
     );
@@ -154,13 +137,13 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          widget.maintitle,
+          widget.data!.title!,
           style: const TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 25),
         Text(
-          widget.discription,
+          widget.data!.discription!,
           style: const TextStyle(color: Colors.white),
           maxLines: 4,
         ),
@@ -169,9 +152,9 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
         const SizedBox(height: 20),
         SizedBox(height: 50, child: _bottumImages()),
         const SizedBox(height: 20),
-        const Text(
-          'Recent Projects',
-          style: TextStyle(
+        Text(
+          widget.data!.aboveCardName!,
+          style: const TextStyle(
               color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 20),
@@ -179,9 +162,15 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              myScrollCard(),
-              myScrollCard(),
-              myScrollCard(),
+              myScrollCard(
+                  imageUrl: widget.data!.bottumCard[0]!.imageUrl,
+                  name: widget.data!.bottumCard[0]!.name),
+              myScrollCard(
+                  imageUrl: widget.data!.bottumCard[1]!.imageUrl,
+                  name: widget.data!.bottumCard[1]!.name),
+              myScrollCard(
+                  imageUrl: widget.data!.bottumCard[2]!.imageUrl,
+                  name: widget.data!.bottumCard[2]!.name),
             ],
           ),
         ),
@@ -190,18 +179,20 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
     );
   }
 
-  DragableScrollCard myScrollCard() => const DragableScrollCard(
-      cardimageurl: 'path',
-      title: 'nooei',
-      time: '2021-2022',
-      aboutit: 'Developed a mobile application');
+  DragableScrollCard myScrollCard(
+          {required String imageUrl, required String name}) =>
+      DragableScrollCard(
+          cardimageurl: imageUrl,
+          title: name,
+          time: '2021-2022',
+          aboutit: 'Developed a mobile application');
 
   Row _bottomTitles() {
     return Row(
       children: [
-        _bottomTitelsCustom(title: widget.bottomtitleleft),
+        _bottomTitelsCustom(title: widget.data!.bottomtag[0]!.name),
         const SizedBox(width: 10),
-        _bottomTitelsCustom(title: widget.bottomtitleright),
+        _bottomTitelsCustom(title: widget.data!.bottomtag[1]!.name),
       ],
     );
   }
@@ -229,15 +220,18 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
       children: [
         Positioned(
           left: 0,
-          child: _bottumImageContainer(imageUrl: widget.buttomimageone),
+          child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[0]!.imageUrl),
         ),
         Positioned(
           left: 35,
-          child: _bottumImageContainer(imageUrl: widget.buttomimagetwo),
+          child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[1]!.imageUrl),
         ),
         Positioned(
           left: 75,
-          child: _bottumImageContainer(imageUrl: widget.buttomimagethree),
+          child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[2]!.imageUrl),
         ),
       ],
     );
