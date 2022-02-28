@@ -9,14 +9,16 @@ class AboutTabPage extends StatefulWidget {
   State<AboutTabPage> createState() => _AboutTabPageState();
 }
 
+const String discription =
+    'Hi my name is Abhinash Pallepogu i am a mobile application developer i use flutter framework to develope mobile applications for both android and Ios';
+
 class _AboutTabPageState extends State<AboutTabPage> {
   @override
   Widget build(BuildContext context) {
     return CustomPage(
       imgUrl: 'https://www.kindpng.com/picc/b/44-446565_biohazard-sign-png.png',
       maintitle: 'About Me',
-      discription:
-          'A Flutter developer will provide you with consistent performance from designing the application, planning a timeline, and developing any complicated application within a short time compared to any other native apps out there.',
+      discription: discription,
       bottomtitleleft: 'Skills',
       bottomtitleright: 'Softwares',
       buttomimageone:

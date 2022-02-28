@@ -180,7 +180,11 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
     );
   }
 
-  DragableScrollCard myScrollCard() => const DragableScrollCard();
+  DragableScrollCard myScrollCard() => const DragableScrollCard(
+      cardimageurl: 'path',
+      title: 'nooei',
+      time: '2021-2022',
+      aboutit: 'Developed a mobile application');
 
   Row _bottomTitles() {
     return Row(
