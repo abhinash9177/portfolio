@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/tabpages/custom_widgets.dart/bottum_stack_image.dart';
+import 'package:portfolio/tabpages/custom_widgets.dart/main_image.dart';
+import 'package:portfolio/tabpages/hero_widget.dart';
 
 class CustomPage extends StatefulWidget {
   const CustomPage(
@@ -91,29 +94,26 @@ class _CustomPageState extends State<CustomPage> {
     );
   }
 
-  GestureDetector _aboutMeField() {
-    return GestureDetector(
-      onTap: (() {}),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            widget.maintitle,
-            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 25),
-          Text(
-            widget.discription,
-            maxLines: 4,
-          ),
-          const SizedBox(height: 20),
-          _bottomTitles(),
-          const SizedBox(height: 20),
-          SizedBox(height: 50, child: _bottumImages()),
-          const SizedBox(height: 20)
-        ],
-      ),
+  Column _aboutMeField() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          widget.maintitle,
+          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 25),
+        Text(
+          widget.discription,
+          maxLines: 4,
+        ),
+        const SizedBox(height: 20),
+        _bottomTitles(),
+        const SizedBox(height: 20),
+        SizedBox(height: 50, child: _bottumImages()),
+        const SizedBox(height: 20)
+      ],
     );
   }
 
@@ -152,43 +152,17 @@ class _CustomPageState extends State<CustomPage> {
     );
   }
 
-  Stack _bottumImageContainer({required String imageUrl}) {
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
-        const CircleAvatar(
-          radius: 24,
-          foregroundColor: Colors.white,
-          backgroundColor: Colors.white,
-        ),
-        Positioned(
-          left: 4,
-          top: 4,
-          child: CircleAvatar(
-            radius: 20,
-            foregroundImage: NetworkImage(imageUrl),
-            backgroundColor: Colors.white,
-          ),
-        ),
-      ],
+  BottumStackImage _bottumImageContainer({required String imageUrl}) {
+    return BottumStackImage(
+      imageUrl: imageUrl,
     );
   }
 
-  GestureDetector _roudContainer({
+  MainImage _roudContainer({
     required String imeUrl,
   }) {
-    return GestureDetector(
-        onTap: () {},
-        child: Container(
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(30)),
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(30),
-            child: Image(
-              image: NetworkImage(imeUrl),
-            ),
-          ),
-        ));
+    return MainImage(
+      imeUrl: imeUrl,
+    );
   }
 }

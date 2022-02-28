@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/tabpages/custom_widgets.dart/bottum_stack_image.dart';
+import 'package:portfolio/tabpages/custom_widgets.dart/main_image.dart';
+import 'package:portfolio/tabpages/custom_widgets.dart/under_logo_row_card.dart';
 import 'package:portfolio/tabpages/dragable_scroll_card.dart';
+import 'package:portfolio/tabpages/hero_widget.dart';
 
 class CustomDeailsPage extends StatefulWidget {
   const CustomDeailsPage(
@@ -43,37 +47,45 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30))),
-              child: Container(
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30),
-                      topRight: Radius.circular(30)),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const SizedBox(height: 25),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 30),
-                      child: SizedBox(
-                        child: Text(
-                          widget.maintitle,
-                          style: const TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 25),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30),
+                    child: SizedBox(
+                      child: Text(
+                        widget.maintitle,
+                        style: const TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    const SizedBox(height: 15),
-                    Center(
-                      child: SizedBox(
-                        height: MediaQuery.of(context).size.width * 0.6,
-                        width: MediaQuery.of(context).size.width * 0.6,
-                        child: _roudContainer(imeUrl: widget.imgUrl),
-                      ),
+                  ),
+                  const SizedBox(height: 15),
+                  Center(
+                    child: SizedBox(
+                      height: MediaQuery.of(context).size.width * 0.4,
+                      width: MediaQuery.of(context).size.width * 0.4,
+                      child: _roudContainer(imeUrl: widget.imgUrl),
                     ),
-                    const SizedBox(height: 25),
-                  ],
-                ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 30.0),
+                    child: Text(
+                      'Work Progress',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30.0),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: SizedBox(height: 80, child: underLogoRow()),
+                    ),
+                  )
+                ],
               ),
             ),
             const SizedBox(height: 25),
@@ -83,6 +95,19 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
           ],
         ),
       ),
+    );
+  }
+
+  Row underLogoRow() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: const [
+        UnderlogoRowCard(),
+        UnderlogoRowCard(),
+        UnderlogoRowCard(),
+        UnderlogoRowCard(),
+        UnderlogoRowCard(),
+      ],
     );
   }
 
@@ -204,41 +229,17 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
     );
   }
 
-  Stack _bottumImageContainer({required String imageUrl}) {
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
-        const CircleAvatar(
-          radius: 24,
-          foregroundColor: Colors.white,
-          backgroundColor: Colors.white,
-        ),
-        Positioned(
-          left: 4,
-          top: 4,
-          child: CircleAvatar(
-            radius: 20,
-            foregroundImage: NetworkImage(imageUrl),
-            backgroundColor: Colors.white,
-          ),
-        ),
-      ],
+  BottumStackImage _bottumImageContainer({required String imageUrl}) {
+    return BottumStackImage(
+      imageUrl: imageUrl,
     );
   }
 
-  Container _roudContainer({
+  MainImage _roudContainer({
     required String imeUrl,
   }) {
-    return Container(
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(30)),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(30),
-        child: Image(
-          image: NetworkImage(imeUrl),
-        ),
-      ),
+    return MainImage(
+      imeUrl: imeUrl,
     );
   }
 }
