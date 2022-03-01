@@ -6,8 +6,8 @@ import 'package:portfolio/tabpages/custom_widgets.dart/under_logo_row_card.dart'
 import 'package:portfolio/tabpages/dragable_scroll_card.dart';
 import 'package:portfolio/tabpages/hero_widget.dart';
 
-class JsonBuildPage extends StatefulWidget {
-  const JsonBuildPage({
+class DetailsPage extends StatefulWidget {
+  const DetailsPage({
     Key? key,
     required this.data,
   }) : super(key: key);
@@ -15,10 +15,10 @@ class JsonBuildPage extends StatefulWidget {
   final Data? data;
 
   @override
-  State<JsonBuildPage> createState() => _JsonBuildPageState();
+  State<DetailsPage> createState() => _DetailsPageState();
 }
 
-class _JsonBuildPageState extends State<JsonBuildPage> {
+class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     final Data? mydata = widget.data;
@@ -66,16 +66,13 @@ class _JsonBuildPageState extends State<JsonBuildPage> {
                   const SizedBox(height: 5),
                   Padding(
                     padding: const EdgeInsets.only(left: 30.0),
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: SizedBox(height: 80, child: underLogoRow()),
-                    ),
+                    child: SizedBox(height: 60, child: underLogoRow()),
                   )
                 ],
               ),
             ),
             const SizedBox(height: 25),
-            SizedBox.expand(
+            SizedBox(
               child: dragableWidget(),
             ),
           ],
@@ -84,23 +81,16 @@ class _JsonBuildPageState extends State<JsonBuildPage> {
     );
   }
 
-  Row underLogoRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        UnderlogoRowCard(
-          name: widget.data!.underLogoRow[0]!.name,
-        ),
-        UnderlogoRowCard(
-          name: widget.data!.underLogoRow[1]!.name,
-        ),
-        UnderlogoRowCard(
-          name: widget.data!.underLogoRow[2]!.name,
-        ),
-        UnderlogoRowCard(
-          name: widget.data!.underLogoRow[3]!.name,
-        ),
-      ],
+  ListView underLogoRow() {
+    return ListView.builder(
+      scrollDirection: Axis.horizontal,
+      shrinkWrap: true,
+      itemCount: widget.data!.underLogoRow.length,
+      itemBuilder: (BuildContext context, int index) {
+        return UnderlogoRowCard(
+          name: widget.data!.underLogoRow[index]!.name,
+        );
+      },
     );
   }
 
@@ -119,6 +109,7 @@ class _JsonBuildPageState extends State<JsonBuildPage> {
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: ListView.builder(
+              shrinkWrap: true,
               controller: scrollController,
               itemCount: 1,
               itemBuilder: (context, index) {
@@ -158,20 +149,18 @@ class _JsonBuildPageState extends State<JsonBuildPage> {
               color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 20),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              myScrollCard(
-                  imageUrl: widget.data!.bottumCard[0]!.imageUrl,
-                  name: widget.data!.bottumCard[0]!.name),
-              myScrollCard(
-                  imageUrl: widget.data!.bottumCard[1]!.imageUrl,
-                  name: widget.data!.bottumCard[1]!.name),
-              myScrollCard(
-                  imageUrl: widget.data!.bottumCard[2]!.imageUrl,
-                  name: widget.data!.bottumCard[2]!.name),
-            ],
+        SizedBox(
+          height: 290,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            shrinkWrap: true,
+            itemCount: widget.data!.bottumCard.length,
+            itemBuilder: (BuildContext context, int index) {
+              return myScrollCard(
+                name: widget.data!.bottumCard[index]!.name,
+                imageUrl: widget.data!.bottumCard[index]!.imageUrl,
+              );
+            },
           ),
         ),
         const SizedBox(height: 20),

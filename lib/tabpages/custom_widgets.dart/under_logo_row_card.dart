@@ -12,13 +12,14 @@ class _UnderlogoRowCardState extends State<UnderlogoRowCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.grey[300],
       child: SizedBox(
-        height: 50,
         width: 120,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(icon),
+            Center(child: Icon(icon)),
             const SizedBox(width: 5),
             Padding(
               padding: const EdgeInsets.all(8.0),
