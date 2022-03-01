@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/checking/mymodel.dart';
+import 'package:portfolio/pages/mymodel.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/bottum_stack_image.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/main_image.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/under_logo_row_card.dart';
@@ -128,7 +128,7 @@ class _DetailsPageState extends State<DetailsPage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          widget.data!.title!,
+          widget.data!.myname!,
           style: const TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
         ),

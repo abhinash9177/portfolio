@@ -1,30 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/pages/mymodel.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/bottum_stack_image.dart';
 import 'package:portfolio/tabpages/custom_widgets.dart/main_image.dart';
 import 'package:portfolio/tabpages/hero_widget.dart';
 
 class CustomPage extends StatefulWidget {
-  const CustomPage(
-      {Key? key,
-      required this.imgUrl,
-      required this.maintitle,
-      required this.discription,
-      required this.bottomtitleleft,
-      required this.bottomtitleright,
-      required this.buttomimageone,
-      required this.buttomimagetwo,
-      required this.buttomimagethree,
-      required this.onClick})
+  const CustomPage({Key? key, required this.data, required this.onClick})
       : super(key: key);
 
-  final String imgUrl;
-  final String maintitle;
-  final String discription;
-  final String bottomtitleleft;
-  final String bottomtitleright;
-  final String buttomimageone;
-  final String buttomimagetwo;
-  final String buttomimagethree;
+  final Data? data;
+
   final VoidCallback onClick;
 
   @override
@@ -62,7 +47,8 @@ class _CustomPageState extends State<CustomPage> {
                               child: SizedBox(
                                 height: MediaQuery.of(context).size.width * 0.6,
                                 width: MediaQuery.of(context).size.width * 0.6,
-                                child: _roudContainer(imeUrl: widget.imgUrl),
+                                child: _roudContainer(
+                                    imeUrl: widget.data!.mainImage!),
                               ),
                             ),
                             const SizedBox(height: 25),
@@ -100,12 +86,12 @@ class _CustomPageState extends State<CustomPage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          widget.maintitle,
+          widget.data!.title!,
           style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 25),
         Text(
-          widget.discription,
+          widget.data!.discription!,
           maxLines: 4,
         ),
         const SizedBox(height: 20),
@@ -121,12 +107,12 @@ class _CustomPageState extends State<CustomPage> {
     return Row(
       children: [
         Text(
-          widget.bottomtitleleft,
+          widget.data!.bottomtag[0]!.name,
           style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
         ),
         const SizedBox(width: 20),
         Text(
-          widget.bottomtitleright,
+          widget.data!.bottomtag[1]!.name,
           style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
         )
       ],
@@ -138,15 +124,18 @@ class _CustomPageState extends State<CustomPage> {
       children: [
         Positioned(
           left: 0,
-          child: _bottumImageContainer(imageUrl: widget.buttomimageone),
+          child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[0]!.imageUrl),
         ),
         Positioned(
           left: 35,
-          child: _bottumImageContainer(imageUrl: widget.buttomimagetwo),
+          child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[1]!.imageUrl),
         ),
         Positioned(
           left: 75,
-          child: _bottumImageContainer(imageUrl: widget.buttomimagethree),
+          child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[2]!.imageUrl),
         ),
       ],
     );
