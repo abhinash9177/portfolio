@@ -43,6 +43,7 @@ class _CustomPageState extends State<CustomPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            const SizedBox(height: 25),
                             Center(
                               child: SizedBox(
                                 height:

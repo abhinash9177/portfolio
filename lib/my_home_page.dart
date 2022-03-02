@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal, child: myTabRow()),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
                 Expanded(
                     child: Center(
                         child: _widgetOptions.elementAt(_selectedIndex))),
