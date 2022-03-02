@@ -4,24 +4,28 @@
                 "_id": "5ff5bdec52210127cba9a4bd",
                 "title":"Education",
                 "myname": "Qualification",
-                "main_image": "https://www.pngitem.com/pimgs/m/14-142430_education-icon-png-transparent-png.png",  
+                "main_image": "https://i.pinimg.com/736x/8e/f8/55/8ef855f46702650f9c4f529d537d7d97.jpg",  
                 "under_logo_title": "Study Details",
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
-                                "name": "SSC"                          
+                                "name": "SSC",
+                                "icon": "study"                           
                             },                                                             
                             {
                                 "id": 2,
-                                "name": "Inter"                              
+                                "name": "Intermediate",
+                                "icon": "study"                               
                             },
                             {
                                 "id": 3,
-                                "name": "BSc"                              
+                                "name": "BSc",
+                                "icon": "study"                               
                             },
                             {
                                 "id": 4,
-                                "name": "Msc"                              
+                                "name": "Msc",
+                                "icon": "study"                               
                              }            
                     
                                   ],  

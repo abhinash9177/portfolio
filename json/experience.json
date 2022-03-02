@@ -9,23 +9,27 @@
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
-                                "name": "One"                          
+                                "name": "nooei",
+                                "icon": "android"                           
                             },                                                             
                             {
                                 "id": 2,
-                                "name": "Two"                              
+                                "name": "SKM Trust",
+                                "icon": "android"                               
                             },
                             {
                                 "id": 3,
-                                "name": "Three"                              
+                                "name": "SandLoader",
+                                "icon": "android"                               
                             },
                             {
                                 "id": 4,
-                                "name": "Four"                              
+                                "name": "Auto OTP",
+                                "icon": "android"                               
                              }            
                     
                                   ],  
-                "discription": "Hi my name is Abhinash Pallepogu i am a mobile application developer i use flutter framework to develope mobile applications for both android and Ios",       
+                "discription": "Developed few web sites for clients, Developed Android applications for clients, offered SEO for some websites, Done VFx for few shortfilms, Created some 3d models",       
                         "bottum_tag": [                                                          
                                 {
                                         "id": 1,
@@ -92,10 +96,17 @@
                     {
                             "id": 3,
                             "name": "SandLoader",  
-                            "image_url": "https://static.turbosquid.com/Preview/2014/05/19__07_51_45/android+1.jpgf114eae8-4981-4c37-a734-d008551724f5Large.jpg",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/Sand-logos_transparent.png",
                             "details": "Built an android application for Lorry Transport Services. It stores tranport data and expences data and reminds user when the next trip is available to go",
-                            "time":"2029-2020"                            
-                    }                                         
+                            "time":"2019-2020"                            
+                    }, 
+                    {
+                            "id": 4,
+                            "name": "Auto OTP",  
+                            "image_url": "https://static.turbosquid.com/Preview/2014/05/19__07_51_45/android+1.jpgf114eae8-4981-4c37-a734-d008551724f5Large.jpg",
+                            "details": "Built an android application for Lorry Transport Services. It retrives the otp from lorry drivers and send back to the user who arranges new trip for them.",
+                            "time":"2019-2020"                            
+                }                                         
                               ]      
                 
                 }

@@ -104,18 +104,23 @@ class _CustomDeailsPageState extends State<CustomDeailsPage> {
       children: const [
         UnderlogoRowCard(
           name: '',
+          icon: '',
         ),
         UnderlogoRowCard(
           name: '',
+          icon: '',
         ),
         UnderlogoRowCard(
           name: '',
+          icon: '',
         ),
         UnderlogoRowCard(
           name: '',
+          icon: '',
         ),
         UnderlogoRowCard(
           name: '',
+          icon: '',
         ),
       ],
     );

@@ -9,20 +9,34 @@
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
-                                "name": "One"                          
+                                "name": "Flutter",
+                                "icon": "code"                          
                             },                                                             
                             {
                                 "id": 2,
-                                "name": "Two"                              
+                                "name": "Dart",
+                                "icon": "code"                              
                             },
                             {
                                 "id": 3,
-                                "name": "Three"                              
+                                "name": "React",
+                                "icon": "code"                              
                             },
                             {
                                 "id": 4,
-                                "name": "Four"                              
-                             }            
+                                "name": "Developer",
+                                "icon":"code"                              
+                             },
+                             {
+                                "id": 5,
+                                "name": "Adobe" ,
+                                "icon":"design"                              
+                             },
+                             {
+                                "id": 6,
+                                "name": "Designer",
+                                "icon":"design"                               
+                             }             
                     
                                   ],  
                 "discription": "Hi my name is Abhinash Pallepogu i am a mobile application developer i use flutter framework to develope mobile applications for both android and Ios",       
@@ -69,6 +83,11 @@
                         },
                         {
                                 "id": 7,
+                                "name": "Cinmea4d",  
+                                "image_url": "https://www.pngitem.com/pimgs/m/343-3438411_transparent-c4d-png-transparent-background-cinema-4d-logo.png"                           
+                        }, 
+                        {
+                                "id": 8,
                                 "name": "Adobe",  
                                 "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"                           
                         }  
@@ -81,43 +100,50 @@
                             "name": "Flutter" ,
                             "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU" ,  
                             "details": "By using Flutter i have built so many apps and they can work in both offline and online",
-                            "time":"2021-2022"                   
+                            "time":"2018"                   
                     },                                                     
                     {
                             "id": 2,
                             "name": "React",  
                             "image_url": "https://www.pinclipart.com/picdir/big/537-5374089_follow-directions-clip-art.png",
                             "details": "Using React Js I have built few webapps for clients ",
-                            "time":"2021-2022"                            
+                            "time":"2021"                            
                     } , 
                     {
                             "id": 3,
                             "name": "HTML",  
                             "image_url": "https://e7.pngegg.com/pngimages/63/313/png-clipart-html-computer-icons-world-wide-web-text-logo-thumbnail.png",
                             "details": "I have built so many Weibsites with HTML & CSS since my graduation",
-                            "time":"2021-2022"                            
+                            "time":"2015"                            
                     },  
                     {
                             "id": 4,
                             "name": "Firebase",  
                             "image_url": "https://i.pinimg.com/originals/07/ca/4a/07ca4afbde70ce0c995b3f63e9c04ceb.png",
                             "details": "I have done VFx for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
-                            "time":"2021-2022"                            
+                            "time":"2020"                            
                     },
                     {
                             "id": 5,
                             "name": "Adobe After Effects",  
                             "image_url": "https://e7.pngegg.com/pngimages/44/153/png-clipart-adobe-after-effects-computer-icons-encapsulated-postscript-commaseparated-values-purple-cdr-thumbnail.png",
                             "details": "I have done VFx for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
-                            "time":"2021-2022"                            
+                            "time":"2016"                            
                     },
                     {
                             "id": 6,
                             "name": "Adobe Premiere Pro",  
                             "image_url": "https://pnggrid.com/wp-content/uploads/2021/06/Adobe-Premiere-Pro-Logo.png",
                             "details": "I have done Editing for few shotfilms and they got good views in Youtube ",
-                            "time":"2021-2022"                            
-                    }                                         
+                            "time":"2016"                            
+                    },
+                    {
+                            "id": 7,
+                            "name": "Cinema 4d",  
+                            "image_url": "https://www.pngitem.com/pimgs/m/343-3438411_transparent-c4d-png-transparent-background-cinema-4d-logo.png",
+                            "details": "I have done Vfx for few shotfilms using cinema 4d for 3d modeling and they got good views in Youtube ",
+                            "time":"2016"                            
+                    }                                          
                               ]      
                 
                 }

@@ -2,79 +2,83 @@
     "data": [    
                 {
                 "_id": "5ff5bdec52210127cba9a4bd",
-                "title":"Work",
-                "myname": "Work Details",
-                "main_image": "https://static.thedecisionlab.com/wp-content/uploads/2020/11/albert-einstein.jpg",  
-                "under_logo_title": "Study Details",
+                "title":"Contact",
+                "myname": "Contact Details",
+                "main_image": "http://cckentmd.org/wp-content/uploads/2013/10/aami3-64-512.png",  
+                "under_logo_title": "Contact Details",
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
-                                "name": "One"                          
+                                "name": "One",
+                                "icon": "code"                           
                             },                                                             
                             {
                                 "id": 2,
-                                "name": "Two"                              
+                                "name": "Two",
+                                "icon": "code"                               
                             },
                             {
                                 "id": 3,
-                                "name": "Three"                              
+                                "name": "Three",
+                                "icon": "code"                               
                             },
                             {
                                 "id": 4,
-                                "name": "Four"                              
+                                "name": "Four",
+                                "icon": "code"                               
                              }            
                     
                                   ],  
-                "discription": "Hi my name is Abhinash Pallepogu i am a mobile application developer i use flutter framework to develope mobile applications for both android and Ios",       
+                "discription": "Contact me at abhinash.email@gmail.com, You can also contact me through LinkedIn and GitHub. details as follows.",       
                         "bottum_tag": [                                                          
                                 {
                                         "id": 1,
-                                        "name": "Skills"                                                  
+                                        "name": "Email"                                                  
                                 },                                                         
                                 {
                                         "id": 2,
-                                        "name": "Softwares"                              
+                                        "name": "Social"                              
                                 }                                           
                                 ],   
                 "bottum_logo": [                                                          
                         {
                                 "id": 1,
-                                "name": "flutter" ,
-                                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU"                      
+                                "name": "Email" ,
+                                "image_url": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"                      
                         },                                                     
                         {
                                 "id": 2,
-                                "name": "dart",  
-                                "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default"                           
+                                "name": "LinkedIn",  
+                                "image_url": "https://www.pngfind.com/pngs/m/57-571935_linkedin-icon-vector-png-linkedin-circle-logo-transparent.png"                           
                         } ,  
                         {
                                 "id": 3,
-                                "name": "Adobe",  
-                                "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"                           
+                                "name": "GitHub",  
+                                "image_url": "https://cdn-icons-png.flaticon.com/512/25/25231.png"                           
                         }                                         
                                   ],       
-                 "above_card_name": "Recent Projects"  ,                  
+                 "above_card_name": "Contact here"  ,                  
                  "bottum_card": [                                                          
                     {
                             "id": 1,
-                            "name": "flutter" ,
-                            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU",
-                            "details": "I have build so many apps with flutter",
-                            "time":"2021-2022"                       
+                            "name": "Gmail" ,
+                            "image_url": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png",
+                            "details": "abhinash.email@gmail.com",
+                            "time":"Gmail id"                       
                     },                                                     
                     {
                             "id": 2,
-                            "name": "dart",  
-                            "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default",
-                            "details": "I have build so many apps with flutter",
-                            "time":"2021-2022"                            
+                            "name": "LinkedIn",  
+                            "image_url": "https://www.pngfind.com/pngs/m/57-571935_linkedin-icon-vector-png-linkedin-circle-logo-transparent.png",
+                            "details": "abhinash-pallepogu",
+                            "time":"LinkedIn Profile"                            
                     } ,  
                     {
                             "id": 3,
-                            "name": "Adobe",  
-                            "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png",
-                            "details": "I have build so many apps with flutter",
-                            "time":"2021-2022"                            
+                            "name": "GitHub",  
+                            "image_url": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                            "details": "abhinash9177",
+                            "time":"Repositories"                            
                     }                                         
                               ]      
                 

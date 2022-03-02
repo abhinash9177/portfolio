@@ -89,19 +89,23 @@ class UnderLogoRow {
   UnderLogoRow({
     required this.id,
     required this.name,
+    required this.icon,
   });
 
   int id;
   String name;
+  String icon;
 
   factory UnderLogoRow.fromJson(Map<String, dynamic> json) => UnderLogoRow(
         id: json["id"],
         name: json["name"],
+        icon: json["icon"],
       );
 
   Map<String, dynamic> toJson() => {
         "id": id,
         "name": name,
+        "icon": icon,
       };
 }
 

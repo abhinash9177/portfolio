@@ -93,6 +93,7 @@ class _DetailsPageState extends State<DetailsPage> {
       itemBuilder: (BuildContext context, int index) {
         return UnderlogoRowCard(
           name: widget.data!.underLogoRow[index]!.name,
+          icon: widget.data!.underLogoRow[index]!.icon,
         );
       },
     );
