@@ -78,14 +78,14 @@
                     {
                             "id": 1,
                             "name": "nooei.com" ,
-                            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/nooei.jpg",
                             "details": "Built an android application for nooei.com. It provides consultancy service for students who wants to study in abroad. It works as a medium for all Consultancies in India",
                             "time":"2021-2022"                       
                     },                                                     
                     {
                             "id": 2,
                             "name": "SKM Trust",  
-                            "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/skmtrust.jpg",
                             "details": "Built an android application for Charity. It works as a medium for both donors and recipients along with charity members especially incase of blood donation",
                             "time":"2020-2021"                            
                     } ,  
