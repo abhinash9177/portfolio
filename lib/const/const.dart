@@ -12,10 +12,10 @@ List<Widget> get widgetList {
       field: 'study',
     ),
     const TabBuildPage(
-      field: 'work',
+      field: 'experience',
     ),
     const TabBuildPage(
-      field: 'experience',
-    )
+      field: 'contact',
+    ),
   ];
 }

@@ -47,14 +47,24 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 const SizedBox(height: 5),
-                const Text(
-                  'portfolio',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
-                ),
-                const SizedBox(height: 25),
-                SizedBox(
-                  child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal, child: myTabRow()),
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'portfolio',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w700),
+                      ),
+                      const SizedBox(height: 25),
+                      SizedBox(
+                        child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: myTabRow()),
+                      ),
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 10),
                 Expanded(
@@ -78,9 +88,9 @@ class _MyHomePageState extends State<MyHomePage> {
         const SizedBox(width: 20),
         _roudContainer(name: 'Study', myIndex: 1),
         const SizedBox(width: 20),
-        _roudContainer(name: 'Work', myIndex: 2),
+        _roudContainer(name: 'Experience', myIndex: 2),
         const SizedBox(width: 20),
-        _roudContainer(name: 'Experience', myIndex: 3),
+        _roudContainer(name: 'Contact', myIndex: 3),
       ],
     ));
   }

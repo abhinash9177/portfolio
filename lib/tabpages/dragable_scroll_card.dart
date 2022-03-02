@@ -29,34 +29,37 @@ class _DragableScrollCardState extends State<DragableScrollCard> {
         width: 210,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 80,
-                child: FadeInImage.assetNetwork(
-                  placeholder: 'assets/no-image.jpg',
-                  image: widget.cardimageurl,
+          child: Container(
+            color: Colors.white,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const SizedBox(height: 10),
+                SizedBox(
+                  width: 80,
+                  child: FadeInImage.assetNetwork(
+                    placeholder: 'assets/no-image.jpg',
+                    image: widget.cardimageurl,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Text(widget.title,
-                  style: const TextStyle(
-                      fontSize: 15, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 5),
-              Text(widget.time),
-              const SizedBox(height: 10),
-              Text(
-                widget.details,
-                maxLines: 4,
-                style: TextStyle(
-                    color: Colors.grey[600],
-                    fontSize: 15,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w600),
-              ),
-            ],
+                const SizedBox(height: 10),
+                Text(widget.title,
+                    style: const TextStyle(
+                        fontSize: 15, fontWeight: FontWeight.bold)),
+                const SizedBox(height: 5),
+                Text(widget.time),
+                const SizedBox(height: 10),
+                Text(
+                  widget.details,
+                  maxLines: 6,
+                  style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 14,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w600),
+                ),
+              ],
+            ),
           ),
         ),
       ),

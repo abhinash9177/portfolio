@@ -2,79 +2,79 @@
     "data": [    
                 {
                 "_id": "5ff5bdec52210127cba9a4bd",
-                "title":"Study",
-                "myname": "Education",
-                "main_image": "https://www.99entranceexam.in/wp-content/uploads/2019/01/Osmania-University.jpg",  
+                "title":"Education",
+                "myname": "Qualification",
+                "main_image": "https://www.pngitem.com/pimgs/m/14-142430_education-icon-png-transparent-png.png",  
                 "under_logo_title": "Study Details",
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
-                                "name": "One"                          
+                                "name": "SSC"                          
                             },                                                             
                             {
                                 "id": 2,
-                                "name": "Two"                              
+                                "name": "Inter"                              
                             },
                             {
                                 "id": 3,
-                                "name": "Three"                              
+                                "name": "BSc"                              
                             },
                             {
                                 "id": 4,
-                                "name": "Four"                              
+                                "name": "Msc"                              
                              }            
                     
                                   ],  
-                "discription": "Hi my name is Abhinash Pallepogu i am a mobile application developer i use flutter framework to develope mobile applications for both android and Ios",       
+                "discription": "Completed my graduation (B.Sc Computer Science) from Osmania University Hyderabad With 70%",       
                         "bottum_tag": [                                                          
                                 {
                                         "id": 1,
-                                        "name": "Skills"                                                  
+                                        "name": "Study"                                                  
                                 },                                                         
                                 {
                                         "id": 2,
-                                        "name": "Softwares"                              
+                                        "name": "Field"                              
                                 }                                           
                                 ],   
                 "bottum_logo": [                                                          
                         {
                                 "id": 1,
-                                "name": "flutter" ,
-                                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU"                      
+                                "name": "School" ,
+                                "image_url": "https://www.pngall.com/wp-content/uploads/2018/04/School-PNG-Image-HD.png"                      
                         },                                                     
                         {
                                 "id": 2,
-                                "name": "dart",  
-                                "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default"                           
+                                "name": "Physics",  
+                                "image_url": "https://e7.pngegg.com/pngimages/656/892/png-clipart-atom-science-chemistry-physics-graphics-science-text-logo.png"                           
                         } ,  
-                        {
+                        {  
                                 "id": 3,
-                                "name": "Adobe",  
-                                "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"                           
+                                "name": "BSc",  
+                                "image_url": "https://www.nicepng.com/png/detail/426-4266200_diseo-web-wordpress-green-computer-icon.png"                           
                         }                                         
                                   ],       
-                 "above_card_name": "Recent Projects"  ,                  
+                 "above_card_name": "Educational Qualifications"  ,                  
                  "bottum_card": [                                                          
                     {
                             "id": 1,
-                            "name": "flutter" ,
-                            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU",
-                            "details": "I have build so many apps with flutter",
-                            "time":"2021-2022"                       
+                            "name": "BSc" ,
+                            "image_url": "https://www.nicepng.com/png/detail/426-4266200_diseo-web-wordpress-green-computer-icon.png",
+                            "details": "BSc Computer Science from Osmania University Hyderabad with 70%",
+                            "time":"2011-2014"                       
                     },                                                     
                     {
                             "id": 2,
-                            "name": "dart",  
-                            "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default",
-                            "details": "I have build so many apps with flutter",
-                            "time":"2021-2022"                            
+                            "name": "MSc",  
+                            "image_url": "https://e7.pngegg.com/pngimages/656/892/png-clipart-atom-science-chemistry-physics-graphics-science-text-logo.png",
+                            "details": "Post Graduaction in the field of solid state physics from Osnamina University Hyderabad with 73%",
+                            "time":"2015-2018"                            
                     } ,  
                     {
                             "id": 3,
-                            "name": "Adobe",  
-                            "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png",
-                            "details": "I have build so many apps with flutter",
-                            "time":"2021-2022"                            
+                            "name": "Intermediate",  
+                            "image_url": "https://www.pngitem.com/pimgs/m/14-142430_education-icon-png-transparent-png.png",
+                            "details": "Completed my intermediate education from Board of intermediate education Andhra Pradesh with 75%",
+                            "time":"2009-2011"                            
                     }                                         
                               ]      
                 
