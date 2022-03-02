@@ -4,7 +4,7 @@
                 "_id": "5ff5bdec52210127cba9a4bd",
                 "title":"About Me",
                 "myname": "Abhinash",
-                "main_image": "https://www.kindpng.com/picc/b/44-446565_biohazard-sign-png.png",  
+                "main_image": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/abhinash.jpg",  
                 "under_logo_title": "Work Progress",
                 "under_logo_row": [                                                          
                             {
@@ -49,26 +49,74 @@
                         } ,  
                         {
                                 "id": 3,
+                                "name": "React",  
+                                "image_url": "https://cms-assets.tutsplus.com/cdn-cgi/image/width=360/uploads/users/1125/posts/29791/preview_image/RN.jpg"                           
+                        },
+                        {
+                                "id": 4,
+                                "name": "JavaScript",  
+                                "image_url": "https://cdn.coderons.com/general/tags/javascript.png"                           
+                        },
+                        {
+                                "id": 5,
+                                "name": "HTML",  
+                                "image_url": "https://e7.pngegg.com/pngimages/63/313/png-clipart-html-computer-icons-world-wide-web-text-logo-thumbnail.png"                           
+                        }, 
+                        {
+                                "id": 6,
+                                "name": "CSS",  
+                                "image_url": "https://pixabay.com/get/gee71c3421d03147fb310ed731c1f60930fe54562f864e804b7b3167321e5ece1cb4adfbee7da4b95625d3f49f880481e25c9e84a24b96686bba40893ccf5606f836a1493b35beeaff5c1276adadcf6ce_640.png"                           
+                        },
+                        {
+                                "id": 7,
                                 "name": "Adobe",  
                                 "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"                           
-                        }                                         
+                        }  
+                                                                
                                   ],       
-                 "above_card_name": "Recent Projects"  ,                  
+                 "above_card_name": "What I Know"  ,                  
                  "bottum_card": [                                                          
                     {
                             "id": 1,
-                            "name": "flutter" ,
-                            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU"                      
+                            "name": "Flutter" ,
+                            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU" ,  
+                            "details": "By using Flutter i have built so many apps and they can work in both offline and online",
+                            "time":"2021-2022"                   
                     },                                                     
                     {
                             "id": 2,
-                            "name": "dart",  
-                            "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default"                           
-                    } ,  
+                            "name": "React",  
+                            "image_url": "https://www.pinclipart.com/picdir/big/537-5374089_follow-directions-clip-art.png",
+                            "details": "Using React Js I have built few webapps for clients ",
+                            "time":"2021-2022"                            
+                    } , 
                     {
                             "id": 3,
-                            "name": "Adobe",  
-                            "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"                           
+                            "name": "HTML",  
+                            "image_url": "https://e7.pngegg.com/pngimages/63/313/png-clipart-html-computer-icons-world-wide-web-text-logo-thumbnail.png",
+                            "details": "I have built so many Weibsites with HTML & CSS since my graduation",
+                            "time":"2021-2022"                            
+                    },  
+                    {
+                            "id": 4,
+                            "name": "Firebase",  
+                            "image_url": "https://i.pinimg.com/originals/07/ca/4a/07ca4afbde70ce0c995b3f63e9c04ceb.png",
+                            "details": "I have done VFx for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
+                            "time":"2021-2022"                            
+                    },
+                    {
+                            "id": 5,
+                            "name": "Adobe After Effects",  
+                            "image_url": "https://e7.pngegg.com/pngimages/44/153/png-clipart-adobe-after-effects-computer-icons-encapsulated-postscript-commaseparated-values-purple-cdr-thumbnail.png",
+                            "details": "I have done VFx for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
+                            "time":"2021-2022"                            
+                    },
+                    {
+                            "id": 6,
+                            "name": "Adobe Premiere Pro",  
+                            "image_url": "https://pnggrid.com/wp-content/uploads/2021/06/Adobe-Premiere-Pro-Logo.png",
+                            "details": "I have done Editing for few shotfilms and they got good views in Youtube ",
+                            "time":"2021-2022"                            
                     }                                         
                               ]      
                 

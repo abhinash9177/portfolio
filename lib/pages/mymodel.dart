@@ -150,25 +150,32 @@ class Bottumlogo {
 }
 
 class BottumCard {
-  BottumCard({
-    required this.id,
-    required this.name,
-    required this.imageUrl,
-  });
+  BottumCard(
+      {required this.id,
+      required this.name,
+      required this.imageUrl,
+      required this.details,
+      required this.time});
 
   int id;
   String name;
   String imageUrl;
+  String details;
+  String time;
 
   factory BottumCard.fromJson(Map<String, dynamic> json) => BottumCard(
         id: json["id"],
         name: json["name"],
         imageUrl: json["image_url"],
+        details: json["details"],
+        time: json["time"],
       );
 
   Map<String, dynamic> toJson() => {
         "id": id,
         "name": name,
         "image_url": imageUrl,
+        "details": details,
+        "time": time,
       };
 }

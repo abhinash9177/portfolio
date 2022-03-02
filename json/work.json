@@ -58,17 +58,23 @@
                     {
                             "id": 1,
                             "name": "flutter" ,
-                            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU"                      
+                            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHrevSZOwEpEt0nwf3cBvCF-zjlFDNoWenJqhm176KYgUBEWbR8BxXbZwZMYlWjtl-Gg&usqp=CAU",
+                            "details": "I have build so many apps with flutter",
+                            "time":"2021-2022"                       
                     },                                                     
                     {
                             "id": 2,
                             "name": "dart",  
-                            "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default"                           
+                            "image_url": "https://peterhdd.gallerycdn.vsassets.io/extensions/peterhdd/dartgettersetter/1.0.2/1618520673981/Microsoft.VisualStudio.Services.Icons.Default",
+                            "details": "I have build so many apps with flutter",
+                            "time":"2021-2022"                            
                     } ,  
                     {
                             "id": 3,
                             "name": "Adobe",  
-                            "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"                           
+                            "image_url": "https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png",
+                            "details": "I have build so many apps with flutter",
+                            "time":"2021-2022"                            
                     }                                         
                               ]      
                 

@@ -6,12 +6,12 @@ class DragableScrollCard extends StatefulWidget {
     required this.cardimageurl,
     required this.title,
     required this.time,
-    required this.aboutit,
+    required this.details,
   }) : super(key: key);
   final String cardimageurl;
   final String title;
   final String time;
-  final String aboutit;
+  final String details;
 
   @override
   State<DragableScrollCard> createState() => _DragableScrollCardState();
@@ -27,15 +27,37 @@ class _DragableScrollCardState extends State<DragableScrollCard> {
       child: SizedBox(
         height: 280,
         width: 210,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(width: 80, child: Image.network(widget.cardimageurl)),
-            const SizedBox(height: 20),
-            Text(widget.title),
-            Text(widget.time),
-            Text(widget.aboutit),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 80,
+                child: FadeInImage.assetNetwork(
+                  placeholder: 'assets/no-image.jpg',
+                  image: widget.cardimageurl,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(widget.title,
+                  style: const TextStyle(
+                      fontSize: 15, fontWeight: FontWeight.bold)),
+              const SizedBox(height: 5),
+              Text(widget.time),
+              const SizedBox(height: 10),
+              Text(
+                widget.details,
+                maxLines: 4,
+                style: TextStyle(
+                    color: Colors.grey[600],
+                    fontSize: 15,
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.w600),
+              ),
+            ],
+          ),
         ),
       ),
     );

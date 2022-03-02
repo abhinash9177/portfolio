@@ -45,8 +45,9 @@ class _CustomPageState extends State<CustomPage> {
                           children: [
                             Center(
                               child: SizedBox(
-                                height: MediaQuery.of(context).size.width * 0.6,
-                                width: MediaQuery.of(context).size.width * 0.6,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.26,
+                                //width: MediaQuery.of(context).size.width * 0.6,
                                 child: _roudContainer(
                                     imeUrl: widget.data!.mainImage!),
                               ),
@@ -123,7 +124,7 @@ class _CustomPageState extends State<CustomPage> {
     return ListView.builder(
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
-        itemCount: widget.data!.bottumCard.length,
+        itemCount: widget.data!.bottumlogo.length,
         itemBuilder: (BuildContext context, int index) {
           return Align(
             widthFactor: 0.7,

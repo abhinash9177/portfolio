@@ -163,6 +163,8 @@ class _DetailsPageState extends State<DetailsPage> {
               return myScrollCard(
                 name: widget.data!.bottumCard[index]!.name,
                 imageUrl: widget.data!.bottumCard[index]!.imageUrl,
+                time: widget.data!.bottumCard[index]!.time,
+                details: widget.data!.bottumCard[index]!.details,
               );
             },
           ),
@@ -173,12 +175,12 @@ class _DetailsPageState extends State<DetailsPage> {
   }
 
   DragableScrollCard myScrollCard(
-          {required String imageUrl, required String name}) =>
+          {required String imageUrl,
+          required String name,
+          required String time,
+          required String details}) =>
       DragableScrollCard(
-          cardimageurl: imageUrl,
-          title: name,
-          time: '2021-2022',
-          aboutit: 'Developed a mobile application');
+          cardimageurl: imageUrl, title: name, time: time, details: details);
 
   Row _bottomTitles() {
     return Row(
@@ -212,7 +214,7 @@ class _DetailsPageState extends State<DetailsPage> {
     return ListView.builder(
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
-        itemCount: widget.data!.bottumCard.length,
+        itemCount: widget.data!.bottumlogo.length,
         itemBuilder: (BuildContext context, int index) {
           return Align(
             widthFactor: 0.7,
