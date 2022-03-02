@@ -203,9 +203,8 @@ class _DetailsPageState extends State<DetailsPage> {
         padding: const EdgeInsets.all(8.0),
         child: Text(
           title,
-          style: const TextStyle(
-            color: Colors.black,
-          ),
+          style: TextStyle(
+              color: Colors.grey.shade800, fontWeight: FontWeight.bold),
         ),
       ),
     );

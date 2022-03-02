@@ -42,7 +42,6 @@ class _CustomPageState extends State<CustomPage> {
                           Center(
                             child: SizedBox(
                               height: MediaQuery.of(context).size.height * 0.26,
-                              //width: MediaQuery.of(context).size.width * 0.6,
                               child: _roudContainer(
                                   imeUrl: widget.data!.mainImage!),
                             ),
@@ -87,6 +86,8 @@ class _CustomPageState extends State<CustomPage> {
         const SizedBox(height: 25),
         Text(
           widget.data!.discription!,
+          style: TextStyle(
+              fontWeight: FontWeight.bold, color: Colors.grey.shade600),
           maxLines: 4,
         ),
         const SizedBox(height: 20),

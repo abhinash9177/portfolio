@@ -15,7 +15,10 @@ class _UnderlogoRowCardState extends State<UnderlogoRowCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.blue[100],
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      color: Colors.green[300],
       child: SizedBox(
         width: 120,
         child: Row(

@@ -9,24 +9,20 @@
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
-                                "name": "One",
-                                "icon": "code"                           
+                                "name": "Email",
+                                "icon": "email"                           
                             },                                                             
                             {
                                 "id": 2,
-                                "name": "Two",
-                                "icon": "code"                               
+                                "name": "GutHub",
+                                "icon": "github"                               
                             },
                             {
                                 "id": 3,
-                                "name": "Three",
-                                "icon": "code"                               
-                            },
-                            {
-                                "id": 4,
-                                "name": "Four",
-                                "icon": "code"                               
-                             }            
+                                "name": "LinkedIn",
+                                "icon": "linkedin"                               
+                            }
+                                       
                     
                                   ],  
                 "discription": "Contact me at abhinash.email@gmail.com, You can also contact me through LinkedIn and GitHub. details as follows.",       
@@ -64,7 +60,7 @@
                             "name": "Gmail" ,
                             "image_url": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png",
                             "details": "abhinash.email@gmail.com",
-                            "time":"Gmail id"                       
+                            "time":"Email id"                       
                     },                                                     
                     {
                             "id": 2,

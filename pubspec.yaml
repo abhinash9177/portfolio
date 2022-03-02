@@ -62,7 +62,14 @@ flutter:
    - json/
    - assets/
   #   - images/a_dot_ham.jpeg
-
+  fonts:
+    - family: Circe
+      fonts:
+          - asset: assets/fonts/CRC25.otf
+          - asset: assets/fonts/CRC35.otf
+          - asset: assets/fonts/CRC55.otf
+          - asset: assets/fonts/CRC65.otf
+            
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

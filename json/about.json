@@ -93,7 +93,7 @@
                         }  
                                                                 
                                   ],       
-                 "above_card_name": "What I Know"  ,                  
+                 "above_card_name": "What i know"  ,                  
                  "bottum_card": [                                                          
                     {
                             "id": 1,
@@ -120,14 +120,14 @@
                             "id": 4,
                             "name": "Firebase",  
                             "image_url": "https://i.pinimg.com/originals/07/ca/4a/07ca4afbde70ce0c995b3f63e9c04ceb.png",
-                            "details": "I have done VFx for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
+                            "details": "I have done VFX for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
                             "time":"2020"                            
                     },
                     {
                             "id": 5,
                             "name": "Adobe After Effects",  
                             "image_url": "https://e7.pngegg.com/pngimages/44/153/png-clipart-adobe-after-effects-computer-icons-encapsulated-postscript-commaseparated-values-purple-cdr-thumbnail.png",
-                            "details": "I have done VFx for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
+                            "details": "I have done VFX for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
                             "time":"2016"                            
                     },
                     {

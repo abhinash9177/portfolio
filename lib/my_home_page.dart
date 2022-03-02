@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     IconButton(
                       onPressed: null,
                       icon: Icon(
-                        Icons.notifications_none_rounded,
+                        Icons.notification_add_outlined,
                         color: Colors.black,
                       ),
                       alignment: Alignment.topLeft,
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
       children: [
         _roudContainer(name: 'About', myIndex: 0),
         const SizedBox(width: 20),
-        _roudContainer(name: 'Study', myIndex: 1),
+        _roudContainer(name: 'Education', myIndex: 1),
         const SizedBox(width: 20),
         _roudContainer(name: 'Experience', myIndex: 2),
         const SizedBox(width: 20),
