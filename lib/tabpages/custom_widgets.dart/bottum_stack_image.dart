@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
-class BottumStackImage extends StatelessWidget {
+class BottumStackImage extends StatefulWidget {
   const BottumStackImage({Key? key, required this.imageUrl}) : super(key: key);
-  final String imageUrl;
+  final String? imageUrl;
+
+  @override
+  State<BottumStackImage> createState() => _BottumStackImageState();
+}
+
+class _BottumStackImageState extends State<BottumStackImage> {
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -16,11 +22,17 @@ class BottumStackImage extends StatelessWidget {
         Positioned(
           left: 4,
           top: 4,
-          child: CircleAvatar(
-            radius: 20,
-            foregroundImage: NetworkImage(imageUrl),
-            backgroundColor: Colors.white,
-          ),
+          child: widget.imageUrl != null
+              ? CircleAvatar(
+                  radius: 20,
+                  foregroundImage: NetworkImage(widget.imageUrl!),
+                  backgroundColor: Colors.white,
+                )
+              : const CircleAvatar(
+                  radius: 20,
+                  foregroundImage: AssetImage("assets/no-image.jpg"),
+                  backgroundColor: Colors.white,
+                ),
         ),
       ],
     );

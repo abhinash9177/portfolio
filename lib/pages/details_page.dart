@@ -50,12 +50,14 @@ class _DetailsPageState extends State<DetailsPage> {
                   const SizedBox(height: 15),
                   Center(
                     child: SizedBox(
-                      height: MediaQuery.of(context).size.width * 0.4,
-                      width: MediaQuery.of(context).size.width * 0.4,
+                      height: MediaQuery.of(context).size.height * 0.26,
+                      // width: MediaQuery.of(context).size.width * 0.8,
                       child: _roudContainer(imeUrl: mydata.mainImage!),
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.05,
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 30.0),
                     child: Text(
@@ -63,7 +65,9 @@ class _DetailsPageState extends State<DetailsPage> {
                       style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
-                  const SizedBox(height: 5),
+                  const SizedBox(
+                    height: 5,
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 30.0),
                     child: SizedBox(height: 60, child: underLogoRow()),
@@ -204,26 +208,20 @@ class _DetailsPageState extends State<DetailsPage> {
     );
   }
 
-  Stack _bottumImages() {
-    return Stack(
-      children: [
-        Positioned(
-          left: 0,
-          child: _bottumImageContainer(
-              imageUrl: widget.data!.bottumlogo[0]!.imageUrl),
-        ),
-        Positioned(
-          left: 35,
-          child: _bottumImageContainer(
-              imageUrl: widget.data!.bottumlogo[1]!.imageUrl),
-        ),
-        Positioned(
-          left: 75,
-          child: _bottumImageContainer(
-              imageUrl: widget.data!.bottumlogo[2]!.imageUrl),
-        ),
-      ],
-    );
+  ListView _bottumImages() {
+    return ListView.builder(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
+        itemCount: widget.data!.bottumCard.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Align(
+            widthFactor: 0.7,
+            alignment: Alignment.centerLeft,
+            child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[index]!.imageUrl,
+            ),
+          );
+        });
   }
 
   BottumStackImage _bottumImageContainer({required String imageUrl}) {

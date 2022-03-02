@@ -119,26 +119,20 @@ class _CustomPageState extends State<CustomPage> {
     );
   }
 
-  Stack _bottumImages() {
-    return Stack(
-      children: [
-        Positioned(
-          left: 0,
-          child: _bottumImageContainer(
-              imageUrl: widget.data!.bottumlogo[0]!.imageUrl),
-        ),
-        Positioned(
-          left: 35,
-          child: _bottumImageContainer(
-              imageUrl: widget.data!.bottumlogo[1]!.imageUrl),
-        ),
-        Positioned(
-          left: 75,
-          child: _bottumImageContainer(
-              imageUrl: widget.data!.bottumlogo[2]!.imageUrl),
-        ),
-      ],
-    );
+  ListView _bottumImages() {
+    return ListView.builder(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
+        itemCount: widget.data!.bottumCard.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Align(
+            widthFactor: 0.7,
+            alignment: Alignment.centerLeft,
+            child: _bottumImageContainer(
+              imageUrl: widget.data!.bottumlogo[index]!.imageUrl,
+            ),
+          );
+        });
   }
 
   BottumStackImage _bottumImageContainer({required String imageUrl}) {
