@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Abhinash Profile',
-      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Circe'),
+      theme: ThemeData(primarySwatch: Colors.pink, fontFamily: 'Circe'),
       home: const MyHomePage(),
     );
   }
