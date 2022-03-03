@@ -5,7 +5,7 @@
                 "title":"Education",
                 "myname": "Qualification",
                 "main_image": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/education.png",  
-                "under_logo_title": "Study Details",
+                "under_logo_title": "Educational Details",
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
@@ -29,7 +29,7 @@
                              }            
                     
                                   ],  
-                "discription": "Completed my graduation (B.Sc Computer Science) from Osmania University Hyderabad With 70%",       
+                "discription": "Completed my graduation (B.Sc Computer Science) from Osmania University Hyderabad with 70%",       
                         "bottum_tag": [                                                          
                                 {
                                         "id": 1,

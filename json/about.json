@@ -5,7 +5,7 @@
                 "title":"About Me",
                 "myname": "Abhinash",
                 "main_image": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/abhinash_image.jpg",  
-                "under_logo_title": "Work Progress",
+                "under_logo_title": "Languages and Skills",
                 "under_logo_row": [                                                          
                             {
                                 "id": 1,
@@ -39,7 +39,7 @@
                              }             
                     
                                   ],  
-                "discription": "Hi my name is Abhinash Pallepogu i am a mobile application developer i use flutter framework to develope mobile applications for both Android and IOS",       
+                "discription": "Hi i'm Abhinash Pallepogu i am a mobile application developer i use flutter framework to develope mobile applications for both Android and IOS",       
                         "bottum_tag": [                                                          
                                 {
                                         "id": 1,
@@ -120,14 +120,14 @@
                             "id": 4,
                             "name": "Firebase",  
                             "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/firebase.png",
-                            "details": "I have done VFX for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
+                            "details": "Developed android applications for clients using firebase as a backend for storage and athentication service like login with google or facebook like platforms.",
                             "time":"2020"                            
                     },
                     {
                             "id": 5,
                             "name": "Adobe After Effects",  
                             "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/aftereffects.png",
-                            "details": "I have done VFX for few shotfilms and i got an award in Cult Critic International Movie Awards for VFx Catogery ",
+                            "details": "I have done VFX for few shotfilms and got an award in Cult Critic International Movie Awards held in Kolkatha for VFX Catogery ",
                             "time":"2016"                            
                     },
                     {
@@ -141,7 +141,7 @@
                             "id": 7,
                             "name": "Cinema 4d",  
                             "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/cinema4d.png",
-                            "details": "I have done Vfx for few shotfilms using cinema 4d for 3d modeling and they got good views in Youtube ",
+                            "details": "I have done VfX for few shotfilms using cinema 4d for Visual Effects and 3d modeling and they got good views in Youtube ",
                             "time":"2016"                            
                     }                                          
                               ]      
