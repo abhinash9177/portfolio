@@ -125,20 +125,27 @@
                     },
                     {
                             "id": 5,
+                            "name": "Adobe Photoshop",  
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/photoshop.png",
+                            "details": "I have done graphic designs, titles and posters for few shotfilms. Designed templates for companies using photoshop. ",
+                            "time":"2016"                            
+                    },
+                    {
+                            "id": 6,
                             "name": "Adobe After Effects",  
                             "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/aftereffects.png",
                             "details": "I have done VFX for few shotfilms and got an award in Cult Critic International Movie Awards held in Kolkatha for VFX Catogery ",
                             "time":"2016"                            
                     },
                     {
-                            "id": 6,
+                            "id": 7,
                             "name": "Adobe Premiere Pro",  
                             "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/premierepro.png",
                             "details": "I have done Editing for few shotfilms and they got good views in Youtube ",
                             "time":"2016"                            
                     },
                     {
-                            "id": 7,
+                            "id": 8,
                             "name": "Cinema 4d",  
                             "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/cinema4d.png",
                             "details": "I have done VfX for few shotfilms using cinema 4d for Visual Effects and 3d modeling and they got good views in Youtube ",
