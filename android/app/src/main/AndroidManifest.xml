@@ -2,7 +2,7 @@
     package="com.example.portfolio">
     <uses-permission android:name="android.permission.INTERNET"/> 
    <application
-        android:label="portfolio"
+        android:label="profile"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

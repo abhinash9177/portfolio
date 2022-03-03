@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/mymodel.dart';
-import 'package:portfolio/tabpages/custom_widgets.dart/bottum_stack_image.dart';
-import 'package:portfolio/tabpages/custom_widgets.dart/main_image.dart';
-import 'package:portfolio/tabpages/hero_widget.dart';
+import 'package:portfolio/screens/api/mymodel.dart';
+import 'package:portfolio/screens/reusewidgets/bottum_stack_image.dart';
+import 'package:portfolio/screens/reusewidgets/main_image.dart';
 
 class CustomPage extends StatefulWidget {
   const CustomPage({Key? key, required this.data, required this.onClick})

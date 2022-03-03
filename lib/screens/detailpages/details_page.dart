@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/mymodel.dart';
-import 'package:portfolio/tabpages/custom_widgets.dart/bottum_stack_image.dart';
-import 'package:portfolio/tabpages/custom_widgets.dart/main_image.dart';
-import 'package:portfolio/tabpages/custom_widgets.dart/under_logo_row_card.dart';
-import 'package:portfolio/tabpages/dragable_scroll_card.dart';
-import 'package:portfolio/tabpages/hero_widget.dart';
+import 'package:portfolio/screens/api/mymodel.dart';
+import 'package:portfolio/screens/reusewidgets/bottum_stack_image.dart';
+import 'package:portfolio/screens/reusewidgets/main_image.dart';
+import 'package:portfolio/screens/reusewidgets/dragable_scroll_card.dart';
+import 'package:portfolio/screens/reusewidgets/under_logo_row_card.dart';
 
 class DetailsPage extends StatefulWidget {
   const DetailsPage({
@@ -155,7 +154,7 @@ class _DetailsPageState extends State<DetailsPage> {
         ),
         const SizedBox(height: 20),
         SizedBox(
-          height: 290,
+          height: 350,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,

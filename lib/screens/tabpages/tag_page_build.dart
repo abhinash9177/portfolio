@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/details_page.dart';
-import 'package:portfolio/pages/mymodel.dart';
+import 'package:portfolio/screens/detailpages/detals_page_build.dart';
+import 'package:portfolio/screens/api/mymodel.dart';
 import 'dart:async';
-import 'package:portfolio/pages/server.dart';
+import 'package:portfolio/screens/api/server.dart';
+import 'package:portfolio/screens/tabpages/coustom_page.dart';
 
-class CustomBuild extends StatefulWidget {
-  const CustomBuild({Key? key, required this.field}) : super(key: key);
+class TabBuildPage extends StatefulWidget {
+  const TabBuildPage({Key? key, required this.field}) : super(key: key);
   final String field;
 
   @override
   _CustomBuildState createState() => _CustomBuildState();
 }
 
-class _CustomBuildState extends State<CustomBuild> {
+class _CustomBuildState extends State<TabBuildPage> {
   late Future<MyModel?> data;
 
   @override
@@ -31,11 +32,21 @@ class _CustomBuildState extends State<CustomBuild> {
                 );
               } else if (snapshot.hasData) {
                 final data = snapshot.data!.data[0];
-                return Center(child: DetailsPage(data: data));
+                return Center(child: CustomPage(data: data, onClick: onClick));
               }
               return const Text('no data');
             }),
       ),
+    );
+  }
+
+  onClick() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) => CustomBuild(
+                field: widget.field,
+              )),
     );
   }
 }

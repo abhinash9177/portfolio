@@ -25,8 +25,8 @@ class _DragableScrollCardState extends State<DragableScrollCard> {
         borderRadius: BorderRadius.circular(20.0),
       ),
       child: SizedBox(
-        height: 280,
-        width: 210,
+        height: 350,
+        width: 250,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Container(
@@ -49,14 +49,16 @@ class _DragableScrollCardState extends State<DragableScrollCard> {
                 const SizedBox(height: 5),
                 Text(widget.time),
                 const SizedBox(height: 10),
-                Text(
-                  widget.details,
-                  maxLines: 6,
-                  style: TextStyle(
-                      color: Colors.grey[600],
-                      fontSize: 14,
-                      fontStyle: FontStyle.normal,
-                      fontWeight: FontWeight.w600),
+                Center(
+                  child: Text(
+                    widget.details,
+                    maxLines: 6,
+                    style: TextStyle(
+                        color: Colors.grey[600],
+                        fontSize: 14,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w600),
+                  ),
                 ),
               ],
             ),

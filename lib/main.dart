@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Abhinash Portfolio',
+      title: 'Abhinash Profile',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Circe'),
       home: const MyHomePage(),
     );

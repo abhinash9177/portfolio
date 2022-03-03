@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/detals_page_build.dart';
-import 'package:portfolio/pages/tabpages/tag_page_build.dart';
-import 'package:portfolio/tabpages/about/about_tab.dart';
+import 'package:portfolio/screens/tabpages/tag_page_build.dart';
 
 List<Widget> get widgetList {
   return <Widget>[

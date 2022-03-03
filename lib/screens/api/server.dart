@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:portfolio/pages/mymodel.dart';
+import 'package:portfolio/screens/api/mymodel.dart';
 
 class MyService {
   static Future<MyModel> getdataFromJson(String field) async {

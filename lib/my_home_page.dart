@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        'portfolio',
+                        'profile',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.w700),
                       ),
