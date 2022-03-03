@@ -30,7 +30,7 @@ class _BottumStackImageState extends State<BottumStackImage> {
                 )
               : const CircleAvatar(
                   radius: 20,
-                  foregroundImage: AssetImage("assets/no-image.jpg"),
+                  foregroundImage: AssetImage("assets/placeholder.jpg"),
                   backgroundColor: Colors.white,
                 ),
         ),

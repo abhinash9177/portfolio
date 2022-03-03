@@ -29,62 +29,72 @@
                              }            
                     
                                   ],  
-                "discription": "Developed web sites for clients, Developed Android applications for clients, offered SEO for websites, Done VFX for shortfilms, Created 3d models",       
-                        "bottum_tag": [                                                          
-                                {
-                                        "id": 1,
-                                        "name": "flutter" ,
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/flutterlogo.png"                      
-                                },                                                     
-                                {
-                                        "id": 2,
-                                        "name": "dart",  
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/dartlogo.png"                           
-                                } ,  
-                                {
-                                        "id": 3,
-                                        "name": "React",  
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/reactlogo.png"                           
-                                },
-                                {
-                                        "id": 4,
-                                        "name": "JavaScript",  
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/javascript.png"                           
-                                },
-                                {
-                                        "id": 5,
-                                        "name": "HTML",  
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/html.png"                           
-                                }, 
-                                {
-                                        "id": 6,
-                                        "name": "CSS",  
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/css.png"                           
-                                },
-                                {
-                                        "id": 7,
-                                        "name": "Cinmea4d",  
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/cinema4d.png"                           
-                                }, 
-                                {
-                                        "id": 8,
-                                        "name": "Adobe",  
-                                        "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/adobe.png"                           
-                                }                                          
-                                  ],       
+                "discription": "Developed web sites for clients, Developed Android applications for clients, offered SEO for websites, Done VFX for shortfilms, Created 3d models", 
+                "bottum_tag": [                                                          
+                        {
+                                "id": 1,
+                                "name": "Apps"                                                  
+                        },                                                         
+                        {
+                                "id": 2,
+                                "name": "Languages"                              
+                        }                                           
+                        ],      
+                "bottum_logo": [                                                          
+                        {
+                                "id": 1,
+                                "name": "flutter" ,
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/flutterlogo.png"                      
+                        },                                                     
+                        {
+                                "id": 2,
+                                "name": "dart",  
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/dartlogo.png"                           
+                        } ,  
+                        {
+                                "id": 3,
+                                "name": "React",  
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/reactlogo.png"                           
+                        },
+                        {
+                                "id": 4,
+                                "name": "JavaScript",  
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/javascript.png"                           
+                        },
+                        {
+                                "id": 5,
+                                "name": "HTML",  
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/html.png"                           
+                        }, 
+                        {
+                                "id": 6,
+                                "name": "CSS",  
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/css.png"                           
+                        },
+                        {
+                                "id": 7,
+                                "name": "Cinmea4d",  
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/cinema4d.png"                           
+                        }, 
+                        {
+                                "id": 8,
+                                "name": "Adobe",  
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/adobe.png"                           
+                        }                                          
+                                ],       
                  "above_card_name": "Recent Projects"  ,                  
                  "bottum_card": [                                                          
                     {
                             "id": 1,
                             "name": "nooei.com" ,
-                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/nooei.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/nooei.jpg",
                             "details": "Built an android application for nooei.com. It provides consultancy service for students who wants to study in abroad. It works as a medium for all Consultancies in India",
                             "time":"2021-2022"                       
                     },                                                     
                     {
                             "id": 2,
                             "name": "SKM Trust",  
-                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/skmtrust.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/skmtrust.jpg",
                             "details": "Built an android application for Charity. It works as a medium for both donors and recipients along with charity members especially incase of blood donation",
                             "time":"2020-2021"                            
                     } ,  

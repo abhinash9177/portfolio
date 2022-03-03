@@ -38,7 +38,7 @@ class _DragableScrollCardState extends State<DragableScrollCard> {
                 SizedBox(
                   width: 80,
                   child: FadeInImage.assetNetwork(
-                    placeholder: 'assets/no-image.jpg',
+                    placeholder: 'assets/placeholder.jpg',
                     image: widget.cardimageurl,
                   ),
                 ),

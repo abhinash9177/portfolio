@@ -13,7 +13,7 @@ class MainImage extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(25),
         child: FadeInImage.assetNetwork(
-          placeholder: 'assets/no-image.jpg',
+          placeholder: 'assets/placeholder.jpg',
           image: imeUrl,
         ),
       ),
