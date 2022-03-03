@@ -4,7 +4,7 @@
                 "_id": "5ff5bdec52210127cba9a4bd",
                 "title":"Education",
                 "myname": "Qualification",
-                "main_image": "https://i.pinimg.com/736x/8e/f8/55/8ef855f46702650f9c4f529d537d7d97.jpg",  
+                "main_image": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/education.png",  
                 "under_logo_title": "Study Details",
                 "under_logo_row": [                                                          
                             {
@@ -44,17 +44,17 @@
                         {
                                 "id": 1,
                                 "name": "School" ,
-                                "image_url": "https://www.pngall.com/wp-content/uploads/2018/04/School-PNG-Image-HD.png"                      
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/school.png"                      
                         },                                                     
                         {
                                 "id": 2,
                                 "name": "Physics",  
-                                "image_url": "https://e7.pngegg.com/pngimages/656/892/png-clipart-atom-science-chemistry-physics-graphics-science-text-logo.png"                           
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/physics.png"                           
                         } ,  
                         {  
                                 "id": 3,
                                 "name": "BSc",  
-                                "image_url": "https://www.nicepng.com/png/detail/426-4266200_diseo-web-wordpress-green-computer-icon.png"                           
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/computer.png"                           
                         }                                         
                                   ],       
                  "above_card_name": "Educational Qualifications"  ,                  
@@ -62,21 +62,21 @@
                     {
                             "id": 1,
                             "name": "BSc" ,
-                            "image_url": "https://www.nicepng.com/png/detail/426-4266200_diseo-web-wordpress-green-computer-icon.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/computer.png",
                             "details": "BSc Computer Science from Osmania University Hyderabad with 70%",
                             "time":"2011-2014"                       
                     },                                                     
                     {
                             "id": 2,
                             "name": "MSc",  
-                            "image_url": "https://e7.pngegg.com/pngimages/656/892/png-clipart-atom-science-chemistry-physics-graphics-science-text-logo.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/physics.png",
                             "details": "Post Graduaction in the field of solid state physics from Osnamina University Hyderabad with 73%",
                             "time":"2015-2018"                            
                     } ,  
                     {
                             "id": 3,
                             "name": "Intermediate",  
-                            "image_url": "https://www.pngitem.com/pimgs/m/14-142430_education-icon-png-transparent-png.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/intermediate.png",
                             "details": "Completed my intermediate education from Board of intermediate education Andhra Pradesh with 75%",
                             "time":"2009-2011"                            
                     }                                         

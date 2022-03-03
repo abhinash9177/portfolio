@@ -4,7 +4,7 @@
                 "_id": "5ff5bdec52210127cba9a4bd",
                 "title":"Contact",
                 "myname": "Contact Details",
-                "main_image": "http://cckentmd.org/wp-content/uploads/2013/10/aami3-64-512.png",  
+                "main_image": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/contactpage.png",  
                 "under_logo_title": "Contact Details",
                 "under_logo_row": [                                                          
                             {
@@ -40,17 +40,17 @@
                         {
                                 "id": 1,
                                 "name": "Email" ,
-                                "image_url": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"                      
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/gmail.png"                      
                         },                                                     
                         {
                                 "id": 2,
                                 "name": "LinkedIn",  
-                                "image_url": "https://www.pngfind.com/pngs/m/57-571935_linkedin-icon-vector-png-linkedin-circle-logo-transparent.png"                           
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/linkedin.png"                           
                         } ,  
                         {
                                 "id": 3,
                                 "name": "GitHub",  
-                                "image_url": "https://cdn-icons-png.flaticon.com/512/25/25231.png"                           
+                                "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/gihub.png"                           
                         }                                         
                                   ],       
                  "above_card_name": "Contact here"  ,                  
@@ -58,21 +58,21 @@
                     {
                             "id": 1,
                             "name": "Gmail" ,
-                            "image_url": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/gmail.png",
                             "details": "abhinash.email@gmail.com",
                             "time":"Email id"                       
                     },                                                     
                     {
                             "id": 2,
                             "name": "LinkedIn",  
-                            "image_url": "https://www.pngfind.com/pngs/m/57-571935_linkedin-icon-vector-png-linkedin-circle-logo-transparent.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/linkedin.png",
                             "details": "abhinash-pallepogu",
                             "time":"LinkedIn Profile"                            
                     } ,  
                     {
                             "id": 3,
                             "name": "GitHub",  
-                            "image_url": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+                            "image_url": "https://raw.githubusercontent.com/abhinash9177/portfolio/main/assets/images/uploads/gihub.png",
                             "details": "abhinash9177",
                             "time":"Repositories"                            
                     }                                         
